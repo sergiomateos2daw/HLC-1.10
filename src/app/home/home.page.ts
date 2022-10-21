@@ -58,7 +58,7 @@ export class HomePage {
     this.suma = 0;
     this.media = 0;
     this.restart = false;
-    console.log("Partida reiniciada");
+    console.log("Partida reiniciada correctamente");
   }
 
 }

@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calcular media
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <ion-card *ngIf="restart==false ">
+      <ion-card-header>
+        <p>Introduce los valores que desees</p>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Has introducido {{list1.length}} valores</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-input *ngIf="restart==false" type="number" min="1" [(ngModel)]="num" placeholder="Introduce un número aquí"></ion-input>
+    <ion-card *ngIf="restart==true">
+      <ion-card-header>
+        Operación realizada
+      </ion-card-header>
+      <ion-card-content>
+        La media de los valores introducidos es {{media}}
+      </ion-card-content>
+    </ion-card>
+    <ion-button *ngIf="restart==false" expand="block" (click)="introducirNumero()">Introducir valor</ion-button>
+    
+    <ion-button *ngIf="list1.length>1 && restart==false" expand="block" (click)="calcularMedia()">Calcular media</ion-button>
+    <ion-button *ngIf="restart==true" expand="block" (click)="reinicia()">Volver a probar</ion-button>
+  </div>
+</ion-content>

@@ -25,3 +25,37 @@
 #container a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 2000px) and (min-width: 600px) {
+  ion-card{
+    background-color: rgb(46, 46, 46);
+  }
+  #instrucion1{
+    color: white;
+  }
+  #instrucion2{
+    color: red;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  ion-card{
+    background-color: blue;
+  }
+  #instrucion1{
+    color: green;
+  }
+  #instrucion2{
+    color: gold;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 200px) {
+  ion-card{
+    background-color: green;
+  }
+  #instrucion1{
+    color: purple;
+  }
+  #instrucion2{
+    color: cornflowerblue;
+  }
+}

@@ -10,10 +10,10 @@
   <div class="ion-padding">
     <ion-card *ngIf="restart==false ">
       <ion-card-header>
-        <p>Introduce los valores que desees</p>
+        <p id="instrucion1">Introduce los valores que desees</p>
       </ion-card-header>
       <ion-card-content>
-        <p>Has introducido {{list1.length}} valores</p>
+        <p id="instrucion2">Has introducido {{list1.length}} valores</p>
       </ion-card-content>
     </ion-card>
     <ion-input *ngIf="restart==false" type="number" min="1" [(ngModel)]="num" placeholder="Introduce un número aquí"></ion-input>
